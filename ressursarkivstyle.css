@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --white: #FFFFFF;
+    --blue: #00e5ff;
+    --grey: #6e6e6e;
+    --lightgrey: #ebebeb;
+    --border: #aeaeae; 
+    --maxwidth: 1200px;
+    --rootsize: 20px;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--grey);
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--rootsize);
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+div.container {
+    width: 100%;
+    max-width: var(--maxwidth);
+    margin: 0 auto;
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 50px;
+    text-transform: uppercase;
+    object-fit: contain;
+    border: 1px solid var(--border);
+}
+
+nav {
+    object-fit: contain;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-left: 50px;
+}
+
+nav a {
+    color: var(--grey);
+    background-color: var(--lightgrey);
+    text-decoration: none;
+    padding: 1rem 1rem;
+    border: 1px solid var(--border);
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: medium;
+}
+
+nav a.active {
+    background-color: var(--blue);
+    border-color: var(--blue);
+    color: var(--white);
+}
+
+main {
+    color: var(--grey);
+    background-color: var(--white);
+    border-top: 5px solid var(--blue);
+    border-bottom: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    display: flex;
+    margin-top: 0;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    padding: 1rem;
+   
+}
+
+main h2 {
+    text-transform: uppercase;
+}
+
+main p {
+    font-size: small;
+}
